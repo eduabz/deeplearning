@@ -14,6 +14,7 @@ Proyecto académico de clasificación de rostros recortados en tres categorías:
 | [`notebooks/02_modelos_cnn.ipynb`](notebooks/02_modelos_cnn.ipynb) | Experimentos originales ejecutados en el equipo local, con sus salidas guardadas. |
 | [`notebooks/02_modelos_cnn_colab.ipynb`](notebooks/02_modelos_cnn_colab.ipynb) | Versión autónoma para Google Colab: descarga el dataset, prepara recortes, entrena y compara ambas CNN. |
 | [`preparar_dataset.py`](preparar_dataset.py) | ETL ejecutable desde la carpeta del proyecto. |
+| [`entrenar_cnn_basica.py`](entrenar_cnn_basica.py) | Entrena la CNN básica, evalúa validación y guarda el modelo y sus gráficas sin usar notebook. |
 | [`app.py`](app.py) | Interfaz web para clasificar un rostro. |
 | [`reports/reporte_deep_learning_mascarillas.pdf`](reports/reporte_deep_learning_mascarillas.pdf) | Reporte con metodología, resultados, gráficas y demostración de la interfaz. |
 
@@ -44,9 +45,10 @@ Se utilizó Python 3.13.15 en macOS. Crea un entorno virtual e instala `requirem
 ```bash
 python -m pip install -r requirements-dev.txt
 python preparar_dataset.py
+python entrenar_cnn_basica.py
 ```
 
-Abre `notebooks/02_modelos_cnn.ipynb` para reproducir los experimentos locales. Para iniciar la interfaz con el modelo guardado:
+`entrenar_cnn_basica.py` reproduce la CNN básica y vuelve a guardar `models/cnn_basica.keras`; una nueva ejecución puede dar métricas ligeramente distintas. El conjunto de prueba no se usa. Abre `notebooks/02_modelos_cnn.ipynb` para reproducir también la comparación con la CNN profunda. Para iniciar la interfaz con el modelo guardado:
 
 ```bash
 python -m streamlit run app.py
