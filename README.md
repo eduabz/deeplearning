@@ -1,6 +1,8 @@
 # Clasificación del uso de mascarilla con Deep Learning
 
-Proyecto académico de clasificación de rostros recortados en tres categorías: `with_mask` (mascarilla bien puesta), `without_mask` (sin mascarilla) y `mask_weared_incorrect` (mascarilla mal puesta). Se prepararon los datos y se compararon dos redes neuronales convolucionales (CNN) hechas con TensorFlow. La CNN básica se integró en una interfaz local con Streamlit.
+Proyecto académico de clasificación de rostros recortados en tres categorías: `with_mask` (mascarilla bien puesta), `without_mask` (sin mascarilla) y `mask_weared_incorrect` (mascarilla mal puesta). Se prepararon los datos y se compararon dos redes neuronales convolucionales (CNN) hechas con TensorFlow. La CNN básica se integró en una interfaz web con Streamlit.
+
+**[Abrir el clasificador en línea](https://eduabz-mascarillas.streamlit.app/)**
 
 **Alcance:** el modelo clasifica un rostro ya recortado y centrado. La aplicación no localiza rostros en una fotografía completa. El conjunto de prueba permanece reservado para una evaluación posterior.
 
@@ -12,7 +14,7 @@ Proyecto académico de clasificación de rostros recortados en tres categorías:
 | [`notebooks/02_modelos_cnn.ipynb`](notebooks/02_modelos_cnn.ipynb) | Experimentos originales ejecutados en el equipo local, con sus salidas guardadas. |
 | [`notebooks/02_modelos_cnn_colab.ipynb`](notebooks/02_modelos_cnn_colab.ipynb) | Versión autónoma para Google Colab: descarga el dataset, prepara recortes, entrena y compara ambas CNN. |
 | [`preparar_dataset.py`](preparar_dataset.py) | ETL ejecutable desde la carpeta del proyecto. |
-| [`app.py`](app.py) | Interfaz local para clasificar un rostro. |
+| [`app.py`](app.py) | Interfaz web para clasificar un rostro. |
 | [`reports/reporte_deep_learning_mascarillas.pdf`](reports/reporte_deep_learning_mascarillas.pdf) | Reporte con metodología, resultados, gráficas y demostración de la interfaz. |
 
 ## Datos y preparación
