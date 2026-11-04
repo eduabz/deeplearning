@@ -37,10 +37,10 @@ El notebook publicado incluye salidas de una ejecución local completa. La ejecu
 
 ## Ejecutar en el equipo local
 
-Se utilizó Python 3.13.15 en macOS. Crea un entorno virtual e instala las dependencias de `requirements.txt`. Después, coloca el dataset descargado en `data/raw/images/` y `data/raw/annotations/`:
+Se utilizó Python 3.13.15 en macOS. Crea un entorno virtual e instala `requirements-dev.txt` para los notebooks y el entrenamiento. `requirements.txt` contiene solo las dependencias de la interfaz. Después, coloca el dataset descargado en `data/raw/images/` y `data/raw/annotations/`:
 
 ```bash
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
 python preparar_dataset.py
 ```
 
