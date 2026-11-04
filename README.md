@@ -33,7 +33,7 @@ El ETL ajusta las cajas que exceden el borde de la imagen, excluye 469 rostros c
 2. Selecciona **Entorno de ejecución → Ejecutar todo**. El notebook instala `kagglehub` si hace falta, descarga el dataset público, prepara los recortes y entrena las dos CNN. Necesita conexión a internet; puede ejecutarse en CPU o GPU.
 3. Lee las métricas por clase, las matrices de confusión y las curvas. Los modelos `.keras` se guardan en `/content/face_mask_detection/models` dentro de esa sesión de Colab. Los archivos de una sesión de Colab no permanecen allí indefinidamente; descárgalos si deseas conservarlos.
 
-La ejecución de Colab puede producir pequeñas diferencias numéricas respecto de la corrida local documentada en el reporte. El notebook no usa el conjunto de prueba para escoger la CNN.
+El notebook publicado incluye salidas de una ejecución local completa. La ejecución en Colab vuelve a calcularlas y puede producir pequeñas diferencias numéricas respecto de la corrida local documentada en el reporte. El notebook no usa el conjunto de prueba para escoger la CNN.
 
 ## Ejecutar en el equipo local
 
